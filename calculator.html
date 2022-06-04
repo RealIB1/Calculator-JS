@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link href="bootstrap/css/bootstraps.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstraps-theme.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstraps-theme.mins.css" rel="stylesheet" />
+    <link href="bootstrap/js/bootstrap.mins.js" /> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body class="container container-fluid">
+    <header class="header">JS Calculator</header>
+
+    <div class="calculator">
+        <div class="row" class="screen">
+            <input type="text" readonly="true" disabled="disabled" name="calculator-screen" class="calculator-screen" id="screen">
+        </div>
+
+        <div class="row" class="keypad">
+            <button value="AC" class="clear" onclick="clr()">AC</button>
+            <button value="+/-" class="operator" onclick="calculatorScreen('-')">+/-</button>
+            <button value="%" class="operator" onclick="calculatorScreen('%')">%</button>
+            <button value="/" class="operator" onclick="calculatorScreen('/')">/</button>
+            
+        </div>
+
+        <div class="row" class="keypad">
+            <button value="7" onclick="calculatorScreen('7')">7</button>
+            <button value="8" onclick="calculatorScreen('8')">8</button>
+            <button value="9" onclick="calculatorScreen('9')">9</button>
+            <button value="*" class="operator" onclick="calculatorScreen('*')">*</button>
+            
+        </div>
+
+        <div class="row" class="keypad">
+            <button value="4" onclick="calculatorScreen('4')">4</button>
+            <button value="5" onclick="calculatorScreen('5')">5</button>
+            <button value="6" onclick="calculatorScreen('6')">6</button>
+            <button value="-" class="operator" onclick="calculatorScreen('-')">-</button>
+            
+        </div>
+
+        <div class="row" class="keypad">
+            <button value="1" onclick="calculatorScreen('1')">1</button>
+            <button value="2" onclick="calculatorScreen('2')">2</button>
+            <button value="3" onclick="calculatorScreen('3')">3</button>
+            <button value="+" class="operator" onclick="calculatorScreen('+')">+</button>
+
+        </div>
+
+        <div class="row" class="keypad">
+            <button value="=" class="equals" onclick="solve()">=</button>
+            <button value="." onclick="calculatorScreen('.')">.</button>
+            <button value="0" onclick="calculatorScreen('0')">0</button>
+
+        </div>
+    </div>
+
+    <!-- <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
